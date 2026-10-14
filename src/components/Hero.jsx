@@ -16,7 +16,7 @@ export default function Hero() {
                         <p className="lead text-muted mb-4 fs-5"
                         style={{ maxWidth: '600px'}}>
                             Offro uno spazio protetto, accogliente e non giudicante per affrontare 
-                            momenti di ansia, difficoltà relazionali, transazioni di vita e crescita personale.
+                            momenti di ansia, difficoltà relazionali, transizioni di vita e crescita personale.
                         </p>
 
                         <div className="d-flex flex-column flex-sm-row gap-3">
@@ -32,7 +32,7 @@ export default function Hero() {
                     <div className="col-lg-5">
                         <img
                         src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
-                        alt="Dr. Maria Rossi"
+                        alt="Dr. Mario Rossi"
                         className="img-fluid rounded-4 shadow-sm w-100"
                         style={{ objectFit: 'cover', maxHeight:'500px'}}
                         />

@@ -1,7 +1,7 @@
 export default function About() {
     return (
         <>
-        <section id="chi-sono" className="py-5 py-lg-6">
+        <section id="chi-sono" className="py-5 py-lg-6 section-alt">
             <div className="container py-4">
                 <div className="row align-items-center gy-4">
                     <div className="col-lg-5">
