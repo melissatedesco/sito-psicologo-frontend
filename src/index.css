@@ -27,8 +27,12 @@ body {
 h1, h2, h3, h4, h5, h6, .font-heading {
   font-family: var(--font-heading);
   color: var(--text-main);
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.015em;
 }
+
+.display-4 { font-weight: 700; line-height: 1.08; }
+.display-6 { font-weight: 700; }
 
 /* Navbar Sticky */
 .custom-navbar {
@@ -138,6 +142,6 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   min-height: 550px;
 }
 
-.section-divider {
-  border-bottom: 1px solid var(--border-color);
+.section-alt {
+  background-color: #FFFFFF;
 }

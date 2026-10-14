@@ -1,9 +1,8 @@
-import React from "react";
-
 export default function Footer() {
     return (
         <>
         <footer className="mt-auto py-4 bg-white border-top">
+            <div className="container">
             <div className="row gy-3 align-items-center">
                 <div className="col-md-6 text-center text-md-start">
                     <span className="fw-bold font-heading">
@@ -36,6 +35,7 @@ export default function Footer() {
                     &copy; {new Date().getFullYear()} Dr. Mario Rossi. Tutti i diritti riservati.
                     </p>
                 </div>
+            </div>
             </div>
         </footer>
         </>

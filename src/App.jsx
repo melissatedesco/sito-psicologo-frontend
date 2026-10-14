@@ -5,6 +5,7 @@ import Services from "./components/Services"
 import Method from "./components/Method"
 import Booking from "./components/Booking"
 import Footer from "./components/Footer"
+import Contact from "./components/Contact"
 
 function App() {
  
@@ -13,15 +14,11 @@ function App() {
     <div className="d-flex flex-column min-vh-100">
       <Navbar />
       <Hero />
-      <div className="section-divider"></div>
       <About/>
-      <div className="section-divider"></div>
       <Services/>
-      <div className="section-divider"></div>
       <Method/>
-      <div className="section-divider"></div>
       <Booking/>
-          <div className="section-divider"></div>
+      <Contact/>
     <Footer/>
     </div>
      
