@@ -145,3 +145,20 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .section-alt {
   background-color: #FFFFFF;
 }
+
+/* checkbox */
+.form-check-input {
+  border-color: #9aa5a3;
+  border-width: 1.5px;
+}
+
+.form-check-input:checked {
+  /* teal quando spunta */
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.form-check-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(34, 80, 78, 0.2);
+}

@@ -1,7 +1,7 @@
 import {  useState } from "react"
 import DatePicker from "react-datepicker"
 import 'react-datepicker/dist/react-datepicker.css'
-import api from "../../api"
+import api from "../api"
 
 export default function Booking() {
     const [selectedDate, setSelectedDate] = useState(null)
@@ -128,7 +128,7 @@ export default function Booking() {
                                         type="button"
                                         key={slot}
                                         onClick={() => setSelectedSlot(slot)}
-                                        className={`btn ${selectedSlot === slot ? 'btn primary' :
+                                        className={`btn ${selectedSlot === slot ? 'btn-primary' :
                                             'btn-outline-primary'
                                         }`}>
                                             {slot}
@@ -181,7 +181,7 @@ export default function Booking() {
                        {/* messaggio esito */}
                        {message && (
                         <div className={`alert ${message.type === 'success' 
-                            ? 'allert-sussess' : 'allert-danger'}`}>
+                            ? 'alert-success' : 'alert-danger'}`}>
                                 {message.text}
                         </div>
                        )}
