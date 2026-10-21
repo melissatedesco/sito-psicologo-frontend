@@ -1,41 +1,50 @@
 export default function About() {
     return (
         <>
-        <section id="chi-sono" className="py-5 py-lg-6 section-alt">
-            <div className="container py-4">
-                <div className="row align-items-center gy-4">
-                    <div className="col-lg-5">
+        <section id="chi-sono" 
+        className="py-16 lg:py-24 bg-white">
+            <div className="max-w-6xl mx-auto px-4">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                        
+                        {/* immagine */}
+                    <div className="lg:col-span-5">
                         <img 
                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
                         alt="Studio professionale" 
-                        className="img-fluid rounded-3"
+                        className="block w-full aspect-[4/5] object-cover rounded-2xl shadow-sm"
                         />
                         </div>
-                        <div className="col-lg-7 ps-lg-5">
-                            <span className="badge-sage mb-3">
+
+                        {/* testo */}
+                        <div className="lg:col-span-7">
+                            <span className="inline-block rounded-full bg-sage-light border border-sage
+                            px-4 py-1.5 text-sm font-medium text-primary mb-4">
                             Chi Sono
                             </span>
-                            <h2 className="display-6 mb-4 font-heading">
+
+                            <h2 className="font-serif text-3xl lg:text-4xl font-bold text.ink mb-6">
                                 Sono il Dr. Mario Rossi
                             </h2>
-                            <p className="mb-3 text-muted">
+
+                            <p className="text-ink/70 mb-4">
                                 Sono Psicologo e Psicoterapeuta iscritto all'Ordine degli Psicologi.
                                 Da oltre dieci anni accompagno le persone nella comprensione del proprio mondo
                                 emotivo e nello sviluppo di risorse personali.
                             </p>
-                            <p className="mb-4 text-muted">
+
+                            <p className="text-ink/70 mb-8">
                                 Credo fortemente nell'importanza di una relazione terapeutica basata sull'empatia,
                                 sull'autenticità e sulla trasparenza. Ogni percorso viene personalizzato su misura.
                             </p>
 
-                           <div className="col-sm-6">
-                            <h6 className="font-heading mb-1">
+                           <div className="border-l-4 border-primary pl-4">
+                            <h3 className="font-serif text-base font-smibold text-ink mb-1">
                                 Iscrizione Albo
-                            </h6>
-                           <p className="small text-muted mb-0">
+                            </h3>
+                           <p className="text-sm text-ink/70">
                             Iscritto all'Albo degli Psicologi della Regione Lombardia n. 123456
                             </p> 
-                            </div> 
+                        </div> 
                     </div>
                 </div>
             </div>

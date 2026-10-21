@@ -1,147 +1,24 @@
-:root {
-  --bg-main: #FBFAF8;
-  --text-main: #1B2A2A;
-  --primary-color: #22504E;
-  --primary-hover: #183B39;
-  --sage-color: #A9B8A6;
-  --sage-light: #F0F3EF;
-  --border-color: #E4E2DC;
-  
-  --font-heading: 'Source Serif 4', Georgia, serif;
-  --font-body: 'Public Sans', system-ui, -apple-system, sans-serif;
-}
+@import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
+@theme {
+  --color-bg: #fbfaf8;
+  --color-ink: #1b2a2a;
+  --color-primary: #22504E;
+  --color-primary-hover: #183B39;
+  --color-sage: #A9B8A6;
+  --color-sage-light: #F0F3EF;
+  --color-line: #E4E2DC;
+
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-sans: "Public Sans", system-ui, sans-serif;
 }
 
 body {
-  background-color: var(--bg-main);
-  color: var(--text-main);
-  font-family: var(--font-body);
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.65;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
 }
 
-/* Tipografia */
-h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: var(--font-heading);
-  color: var(--text-main);
-  font-weight: 700;
-  letter-spacing: -0.015em;
-}
-
-.display-4 { font-weight: 700; line-height: 1.08; }
-.display-6 { font-weight: 700; }
-
-/* Navbar Sticky */
-.custom-navbar {
-  background-color: rgba(251, 250, 248, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-color);
-}
-
-.custom-nav-link {
-  color: var(--text-main);
-  font-weight: 500;
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.custom-nav-link:hover {
-  color: var(--primary-color);
-}
-
-/* Bottoni */
-.btn-primary-custom {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  border: 1px solid var(--primary-color);
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.btn-primary-custom:hover {
-  background-color: var(--primary-hover);
-  border-color: var(--primary-hover);
-  color: #ffffff;
-}
-
-.btn-outline-custom {
-  background-color: transparent;
-  color: var(--text-main);
-  border: 1px solid var(--border-color);
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.btn-outline-custom:hover {
-  border-color: var(--text-main);
-  background-color: var(--sage-light);
-  color: var(--text-main);
-}
-
-/* Badge e Carte */
-.badge-sage {
-  background-color: var(--sage-light);
-  color: var(--primary-color);
-  border: 1px solid var(--sage-color);
-  font-weight: 500;
-  padding: 0.35rem 0.85rem;
-  border-radius: 50px;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  display: inline-block;
-}
-
-.service-card {
-  background-color: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 2rem;
-  height: 100%;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(27, 42, 42, 0.05);
-}
-
-.service-icon {
-  width: 48px;
-  height: 48px;
-  background-color: var(--sage-light);
-  color: var(--primary-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
-.method-box {
-  background-color: var(--sage-light);
-  border-left: 4px solid var(--primary-color);
-}
-
-.booking-container {
-  background-color: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  min-height: 550px;
-}
-
-.section-alt {
-  background-color: #FFFFFF;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
 }
