@@ -9,7 +9,7 @@ export default function Method() {
     return (
         <>
         <section id="come-lavoro" className="py-16 lg:py-24 bg-white">
-            <div className="maz-w-6xl mx-auto px-4">
+            <div className="max-w-6xl mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
 
                     {/* colonna sinistra: intro */}
@@ -24,7 +24,7 @@ export default function Method() {
                         Iniziare un percorso psicologico è un atto di grande responsabilità verso se stessi.
                         Il lavoro è totalmente collaborativo e orientato al tuo benessere.
                         </p>
-                        <div className="bg-sage-light border-1-4 border-primary rounded-r-lg p-4">
+                        <div className="bg-sage-light border-l-4 border-primary rounded-r-lg p-4">
                         <p className= "italic text-ink/80 text-sm">
                             "Ogni colloquio si svolge nel rispetto del segreto professionale e del 
                             Codice Deontologico degli Psicologi Italiani."
@@ -37,13 +37,13 @@ export default function Method() {
                        <div className="flex flex-col gap-6"> 
                     {steps.map((step) => (
                         <div key={step.num}
-                            className="d-flex gap-4"
+                            className="flex gap-4"
                         >
                             <div className="font-serif text-2xl font-bold text-primary shrink-0"> 
                                 {step.num} 
                                 </div>
                                 <div>
-                                <h3 className="font-serif text-lg font-semibold text.ink mb-1">
+                                <h3 className="font-serif text-lg font-semibold text-ink mb-1">
                                     {step.title}
                                 </h3>
                                 <p className="text-sm text-ink/70">

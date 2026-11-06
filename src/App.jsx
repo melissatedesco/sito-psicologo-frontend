@@ -1,28 +1,32 @@
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import About from "./components/About"
-import Services from "./components/Services"
-import Method from "./components/Method"
-import Booking from "./components/Booking"
-import Footer from "./components/Footer"
-import Contact from "./components/Contact"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home"
+import AdminLogin from "./pages/AdminLogin"
+import ProtectedRoute from "./components/ProtectedRoute"
+import AdminDashboard from "./pages/AdminDashboard"
+import PagamentoOk from "./pages/PagamentoOk"
+import PagamentoAnnullato from "./pages/PagamentoAnnullato"
+import GestioneAppuntamento from "./pages/GestioneAppuntamento"
 
 function App() {
  
   return (
-    <>
-    <div className="d-flex flex-column min-vh-100">
-      <Navbar />
-      <Hero />
-      <About/>
-      <Services/>
-      <Method/>
-      <Booking/>
-      <Contact/>
-    <Footer/>
-    </div>
-     
-    </>
+     <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <Routes>
+    <Route path="/" element={<Home />} />  
+    <Route path="/admin/login" element={<AdminLogin />} />
+      <Route path="/pagamento-ok" element={<PagamentoOk/>} />
+      <Route path="/pagamento-annullato" element={<PagamentoAnnullato />} />
+      <Route path="/gestione/:token" element={<GestioneAppuntamento />} />
+    <Route
+      path="/admin"
+      element={
+        <ProtectedRoute>
+          <AdminDashboard />
+        </ProtectedRoute>
+      }
+    />
+      </Routes> 
+     </BrowserRouter>
   )
 }
 

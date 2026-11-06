@@ -26,11 +26,11 @@ export default function Booking() {
         const dateStr = date.toISOString().slice(0, 10)
         
         try {
-            const res = await api.get('available-slots', {
+            const res = await api.get('/available-slots', {
                 params: {date: dateStr}
             })
             setSlots(res.data.availableSlots)
-        } catch (err) {
+        } catch {
             setMessage({ type: 'error', text: 'Errore nel caricamento degli orari'})
         }
     }
@@ -79,7 +79,7 @@ export default function Booking() {
     return (
         <>
        <section id="prenota" className="py-16 lg:py-24">
-        <div className="max-w-6xl mx-ato px-4">
+        <div className="max-w-6xl mx-auto px-4">
 
             <div className="max-w-xl mx-auto text-center mb-12">
                 <span className="inline-block rounded-full bg-sage-light border border-sage px-4 py-1.5 text-sm font-medium text-primary mb-4">
@@ -123,7 +123,7 @@ export default function Booking() {
                                 Nessun orario libero per questa data
                                 </p>
                             ) : (
-                                <div className="d-flex flex-wrap gap-2">
+                                <div className="flex flex-wrap gap-2">
                                     {slots.map((slot) => (
                                         <button
                                         type="button"
