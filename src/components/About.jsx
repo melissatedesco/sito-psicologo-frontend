@@ -22,7 +22,7 @@ export default function About() {
                             Chi Sono
                             </span>
 
-                            <h2 className="font-serif text-3xl lg:text-4xl font-bold text.ink mb-6">
+                            <h2 className="font-serif text-3xl lg:text-4xl font-bold text-ink mb-6">
                                 Sono il Dr. Mario Rossi
                             </h2>
 
@@ -38,7 +38,7 @@ export default function About() {
                             </p>
 
                            <div className="border-l-4 border-primary pl-4">
-                            <h3 className="font-serif text-base font-smibold text-ink mb-1">
+                            <h3 className="font-serif text-base font-semibold text-ink mb-1">
                                 Iscrizione Albo
                             </h3>
                            <p className="text-sm text-ink/70">

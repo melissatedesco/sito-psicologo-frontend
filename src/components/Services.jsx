@@ -28,7 +28,7 @@ export default function Services() {
                 </div>
 
                 {/*griglia card  */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {services.map((s) => (
                     <div
                         key={s.title}
@@ -37,7 +37,7 @@ export default function Services() {
                             <h3 className="font-serif text-lg font-semibold text-ink mb-2">
                                 {s.title}
                             </h3>
-                            <p className="text-sn text-ink/70">
+                            <p className="text-sm text-ink/70">
                                 {s.text}
                             </p>
                         </div>
