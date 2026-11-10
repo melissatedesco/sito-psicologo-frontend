@@ -1,4 +1,5 @@
 import { useState } from "react"
+import logo from "../assets/logo.png"
 
 export default function Navbar() {
     const [open, setOpen] = useState(false)
@@ -17,8 +18,11 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-16">
 
                 {/* Brand */}
-                <a href="#" className="font-serif text-xl font-bold text-ink">
+                <a href="#" className="flex items-center gap-2">
+                    <img src={logo} alt="Logo studio" className="w-9 h-9 rounded-full" />
+                    <span className="font-serif text-xl font-bold text-ink">
                     Dr. Mario Rossi
+                    </span>
                 </a>
 
                 {/* Menu desktop */}
